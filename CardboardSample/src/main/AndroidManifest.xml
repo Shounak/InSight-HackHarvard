@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.google.vrtoolkit.cardboard.samples.treasurehunt" >
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"
+                android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".DeuteranopiaActivity"
+            android:label="@string/title_activity_deuteranopia"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        <activity
+            android:name=".TritanopiaActivity"
+            android:label="@string/title_activity_tritanopia"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

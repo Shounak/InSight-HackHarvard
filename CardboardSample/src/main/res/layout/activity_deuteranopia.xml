@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.google.vrtoolkit.cardboard.samples.treasurehunt.DeuteranopiaActivity">
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/camera_preview"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:alpha="1" />
+
+            <RelativeLayout
+                android:id="@+id/camera_preview_dummy"
+                android:layout_width="557dp"
+                android:layout_height="fill_parent"
+                android:alpha="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/white_board"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:alpha="100"
+            android:background="@drawable/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/camera_preview_filtered"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="100" />
+
+            <ImageView
+                android:id="@+id/camera_preview_filtered_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:alpha="100" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

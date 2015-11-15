@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cardboard Sample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="white">#FFFFFF</color>
+    <string name="title_activity_deuteranopia">DeuteranopiaActivity</string>
+    <string name="title_activity_tritanopia">TritanopiaActivity</string>
+</resources>
