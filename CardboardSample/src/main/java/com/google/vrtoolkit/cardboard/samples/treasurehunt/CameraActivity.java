@@ -24,7 +24,7 @@ public class CameraActivity extends Activity {
     private TextView debugText;
     private ImageView filteredImageView;
     private ImageView filteredImageViewRight;
-    private Button deuteranopia;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +34,7 @@ public class CameraActivity extends Activity {
         debugText = new TextView(this);
         filteredImageView = (ImageView) findViewById(R.id.camera_preview_filtered);
         filteredImageViewRight = (ImageView) findViewById(R.id.camera_preview_filtered_right);
-        deuteranopia = (Button) findViewById(R.id.deuteranopia);
+        //deuteranopia = (Button) findViewById(R.id.deuteranopia);
         if(checkCameraHardware(this)){
             Toast.makeText(this,"Device has usable camera", Toast.LENGTH_LONG);
             Log.i(TAG, "Device has usable camera");
@@ -60,7 +60,7 @@ public class CameraActivity extends Activity {
             debugText.setText("no Cool");
         }
 
-        deuteranopia.setOnClickListener(new View.OnClickListener() {
+   /*     deuteranopia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -71,13 +71,13 @@ public class CameraActivity extends Activity {
                     ex.printStackTrace();
                 }
             }
-        });
+        });*/
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_camera, menu);
+       // getMenuInflater().inflate(R.menu.menu_camera, menu);
         return true;
     }
 

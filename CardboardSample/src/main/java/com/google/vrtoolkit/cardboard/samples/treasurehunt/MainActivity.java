@@ -91,7 +91,7 @@ public class MainActivity extends CardboardActivity implements CardboardView.Ste
   private int floorModelViewProjectionParam;
   private int floorLightPosParam;
 
-    private float[][] modelCubes = new float[6][16];
+    private float[][] modelCubes = new float[3][16];
   private float[] camera;
   private float[] view;
   private float[] headView;
@@ -305,7 +305,7 @@ public class MainActivity extends CardboardActivity implements CardboardView.Ste
       for (int i = 0; i < modelCubes.length; i++)
       {
           Matrix.setIdentityM(modelCubes[i], 0);
-          Matrix.translateM(modelCubes[i], 0, 10*i, 10*i, -objectDistance);
+          Matrix.translateM(modelCubes[i], 0, 0,3*i, 12);
       }
 
     Matrix.setIdentityM(modelFloor, 0);
